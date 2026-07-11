@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto01\\WebApplication01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8E8C5D-8591-4915-A271-73DB122061B0}|WebApplication01\\WebApplication01.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto01\\webapplication01\\webapplication01\\views\\home\\cibertec.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D8E8C5D-8591-4915-A271-73DB122061B0}|WebApplication01\\WebApplication01.csproj|solutionrelative:webapplication01\\views\\home\\cibertec.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8E8C5D-8591-4915-A271-73DB122061B0}|WebApplication01\\WebApplication01.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto01\\webapplication01\\webapplication01\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6D8E8C5D-8591-4915-A271-73DB122061B0}|WebApplication01\\WebApplication01.csproj|solutionrelative:webapplication01\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8E8C5D-8591-4915-A271-73DB122061B0}|WebApplication01\\WebApplication01.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto01\\webapplication01\\webapplication01\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D8E8C5D-8591-4915-A271-73DB122061B0}|WebApplication01\\WebApplication01.csproj|solutionrelative:webapplication01\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8E8C5D-8591-4915-A271-73DB122061B0}|WebApplication01\\WebApplication01.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto01\\webapplication01\\webapplication01\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8E8C5D-8591-4915-A271-73DB122061B0}|WebApplication01\\WebApplication01.csproj|solutionrelative:webapplication01\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8E8C5D-8591-4915-A271-73DB122061B0}|WebApplication01\\WebApplication01.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto01\\webapplication01\\webapplication01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D8E8C5D-8591-4915-A271-73DB122061B0}|WebApplication01\\WebApplication01.csproj|solutionrelative:webapplication01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D8E8C5D-8591-4915-A271-73DB122061B0}|WebApplication01\\WebApplication01.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto01\\webapplication01\\webapplication01\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6D8E8C5D-8591-4915-A271-73DB122061B0}|WebApplication01\\WebApplication01.csproj|solutionrelative:webapplication01\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 51,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto01\\WebApplication01\\WebApplication01\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "WebApplication01\\wwwroot\\css\\site.css",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto01\\WebApplication01\\WebApplication01\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "WebApplication01\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-11T23:35:29.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cibertec.cshtml",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto01\\WebApplication01\\WebApplication01\\Views\\Home\\Cibertec.cshtml",
+              "RelativeDocumentMoniker": "WebApplication01\\Views\\Home\\Cibertec.cshtml",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto01\\WebApplication01\\WebApplication01\\Views\\Home\\Cibertec.cshtml",
+              "RelativeToolTip": "WebApplication01\\Views\\Home\\Cibertec.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-11T23:32:02.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto01\\WebApplication01\\WebApplication01\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication01\\Program.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto01\\WebApplication01\\WebApplication01\\Program.cs",
+              "RelativeToolTip": "WebApplication01\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T23:26:42.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto01\\WebApplication01\\WebApplication01\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication01\\appsettings.json",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto01\\WebApplication01\\WebApplication01\\appsettings.json",
+              "RelativeToolTip": "WebApplication01\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-11T23:25:56.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto01\\WebApplication01\\WebApplication01\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication01\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto01\\WebApplication01\\WebApplication01\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication01\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-11T23:17:37.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto01\\WebApplication01\\WebApplication01\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebApplication01\\Controllers\\HomeController.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto01\\WebApplication01\\WebApplication01\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebApplication01\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T23:11:50.222Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
