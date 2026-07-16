@@ -99,6 +99,43 @@ namespace WebApplicationCrud.Controllers
 
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(Producto producto)
+        {
+            if (!ModelState.IsValid) { 
+                return View(producto);
+            }
+
+            string mensaje = "";
+
+            using (SqlConnection cn = new SqlConnection(_config["ConnectionStrings:conexSQL"]))
+            {
+                await cn.OpenAsync();
+                SqlCommand cmd = new SqlCommand("usp_insertar_producto", cn);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@descripcion", producto.descripcion);
+                cmd.Parameters.AddWithValue("@umedida", producto.umedida);
+                cmd.Parameters.AddWithValue("@precio", producto.precio);
+                cmd.Parameters.AddWithValue("@stock", producto.stock);
+
+                int filas = await cmd.ExecuteNonQueryAsync();
+
+                mensaje = $"Se inserto {filas} registro";
+
+            }
+
+            TempData["mensaje"] = mensaje;
+            return RedirectToAction("Index");
+
+        }
+
+        public  IActionResult Create()
+        {
+            return View();
+        }
+
+
 
 
 
