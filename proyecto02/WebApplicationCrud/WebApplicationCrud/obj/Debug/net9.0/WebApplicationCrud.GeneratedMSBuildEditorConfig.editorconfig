@@ -36,8 +36,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/CIBERTEC/2026/CICLO 04 - DSW01/desarrollo/cib-dsw01-202607/proyecto02/WebApplicationCrud/WebApplicationCrud/Views/Producto/Filtrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRmlsdHJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/CIBERTEC/2026/CICLO 04 - DSW01/desarrollo/cib-dsw01-202607/proyecto02/WebApplicationCrud/WebApplicationCrud/Views/Producto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CIBERTEC/2026/CICLO 04 - DSW01/desarrollo/cib-dsw01-202607/proyecto02/WebApplicationCrud/WebApplicationCrud/Views/Producto/Paginacion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cUGFnaW5hY2lvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/CIBERTEC/2026/CICLO 04 - DSW01/desarrollo/cib-dsw01-202607/proyecto02/WebApplicationCrud/WebApplicationCrud/Views/Shared/Error.cshtml]
