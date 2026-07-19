@@ -9,6 +9,12 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+@if (TempData["mensaje"] != null)
+{
+    <div class="alert alert-success">@TempData["mensaje"]</div>
+}
+
 <table class="table">
     <thead>
         <tr>
@@ -49,9 +55,8 @@
                 @Html.DisplayFor(modelItem => item.stock)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Editar", "Edit", new { id = item.idproducto }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.idproducto })
             </td>
         </tr>
 }
