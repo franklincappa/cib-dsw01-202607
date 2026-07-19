@@ -70,12 +70,31 @@ namespace WebApplicationCrud.Controllers
             return listaProductos;
         }
 
-
-
+        //Index Principal Básico Listado
+        /*
         public async Task<IActionResult> Index()
         {
             return View(await Task.Run(() => productos()));
+        }*/
+
+        //Index Optimizado
+        public async Task<IActionResult> Index(int pagina = 0, string? descripcion = null)
+        {
+            IEnumerable<Producto> listaProductos = string.IsNullOrEmpty(descripcion) ? productos() : filtro_productos(descripcion);
+
+            int fila = 10;
+            int cant = listaProductos.Count();
+            int paginas = cant % fila == 0 ? cant / fila : cant / fila + 1;
+
+            ViewBag.Pagina = pagina;
+            ViewBag.Paginas = paginas;
+
+            return View(await Task.Run(() =>
+                listaProductos.Skip(fila * pagina).Take(fila)));
+
         }
+
+        
 
         public async Task<IActionResult> Filtrar(string? descripcion = null)
         {
@@ -122,7 +141,7 @@ namespace WebApplicationCrud.Controllers
 
                 int filas = await cmd.ExecuteNonQueryAsync();
 
-                mensaje = $"Se inserto {filas} registro";
+                mensaje = $"Se insertó {filas} registro";
 
             }
 
@@ -220,7 +239,7 @@ namespace WebApplicationCrud.Controllers
 
                 int filas = await cmd.ExecuteNonQueryAsync();
 
-                mensaje = $"Se elimino {filas} registro";
+                mensaje = $"Se eliminó {filas} registro";
 
             }
 

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto02\\WebApplicationCrud\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C477937-F79B-4471-8D51-035BCE6E683F}|WebApplicationCrud\\WebApplicationCrud.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto02\\webapplicationcrud\\webapplicationcrud\\views\\producto\\filtrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C477937-F79B-4471-8D51-035BCE6E683F}|WebApplicationCrud\\WebApplicationCrud.csproj|solutionrelative:webapplicationcrud\\views\\producto\\filtrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8C477937-F79B-4471-8D51-035BCE6E683F}|WebApplicationCrud\\WebApplicationCrud.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto02\\webapplicationcrud\\webapplicationcrud\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C477937-F79B-4471-8D51-035BCE6E683F}|WebApplicationCrud\\WebApplicationCrud.csproj|solutionrelative:webapplicationcrud\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C477937-F79B-4471-8D51-035BCE6E683F}|WebApplicationCrud\\WebApplicationCrud.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto02\\webapplicationcrud\\webapplicationcrud\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8C477937-F79B-4471-8D51-035BCE6E683F}|WebApplicationCrud\\WebApplicationCrud.csproj|solutionrelative:webapplicationcrud\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C477937-F79B-4471-8D51-035BCE6E683F}|WebApplicationCrud\\WebApplicationCrud.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto02\\webapplicationcrud\\webapplicationcrud\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C477937-F79B-4471-8D51-035BCE6E683F}|WebApplicationCrud\\WebApplicationCrud.csproj|solutionrelative:webapplicationcrud\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8C477937-F79B-4471-8D51-035BCE6E683F}|WebApplicationCrud\\WebApplicationCrud.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto02\\webapplicationcrud\\webapplicationcrud\\views\\producto\\paginacion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8C477937-F79B-4471-8D51-035BCE6E683F}|WebApplicationCrud\\WebApplicationCrud.csproj|solutionrelative:webapplicationcrud\\views\\producto\\paginacion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C477937-F79B-4471-8D51-035BCE6E683F}|WebApplicationCrud\\WebApplicationCrud.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto02\\webapplicationcrud\\webapplicationcrud\\views\\producto\\filtrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C477937-F79B-4471-8D51-035BCE6E683F}|WebApplicationCrud\\WebApplicationCrud.csproj|solutionrelative:webapplicationcrud\\views\\producto\\filtrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 51,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,26 +34,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Filtrar.cshtml",
               "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto02\\WebApplicationCrud\\WebApplicationCrud\\Views\\Producto\\Filtrar.cshtml",
               "RelativeDocumentMoniker": "WebApplicationCrud\\Views\\Producto\\Filtrar.cshtml",
               "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto02\\WebApplicationCrud\\WebApplicationCrud\\Views\\Producto\\Filtrar.cshtml",
               "RelativeToolTip": "WebApplicationCrud\\Views\\Producto\\Filtrar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-19T00:16:45.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Paginacion.cshtml",
               "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto02\\WebApplicationCrud\\WebApplicationCrud\\Views\\Producto\\Paginacion.cshtml",
               "RelativeDocumentMoniker": "WebApplicationCrud\\Views\\Producto\\Paginacion.cshtml",
               "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto02\\WebApplicationCrud\\WebApplicationCrud\\Views\\Producto\\Paginacion.cshtml",
               "RelativeToolTip": "WebApplicationCrud\\Views\\Producto\\Paginacion.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAABMAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-19T00:15:26.544Z",
               "EditorCaption": ""
@@ -66,20 +66,20 @@
               "RelativeDocumentMoniker": "WebApplicationCrud\\Views\\Producto\\Index.cshtml",
               "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto02\\WebApplicationCrud\\WebApplicationCrud\\Views\\Producto\\Index.cshtml",
               "RelativeToolTip": "WebApplicationCrud\\Views\\Producto\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADkAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-12T00:45:10.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ProductoController.cs",
               "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto02\\WebApplicationCrud\\WebApplicationCrud\\Controllers\\ProductoController.cs",
               "RelativeDocumentMoniker": "WebApplicationCrud\\Controllers\\ProductoController.cs",
               "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto02\\WebApplicationCrud\\WebApplicationCrud\\Controllers\\ProductoController.cs",
               "RelativeToolTip": "WebApplicationCrud\\Controllers\\ProductoController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwF4AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-12T00:28:08.907Z",
               "EditorCaption": ""

@@ -6,6 +6,12 @@
 
 <h1>Index</h1>
 
+<form asp-action="Index" asp-controller="Producto">
+    <em>Descripción del Producto</em>
+    @Html.TextBox("descripcion", "")
+    <button>Buscar</button>
+</form>
+
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -62,3 +68,13 @@
 }
     </tbody>
 </table>
+
+<div>
+    @for (int i = 0; i < (int)ViewBag.Paginas; i++)
+    {
+        <a asp-action="Index" asp-route-pagina=@i
+           class=@(i==(int)ViewBag.pagina ? "btn btn-success" : "btn btn-primary")>
+            @(i + 1)
+        </a>
+    }
+</div>
