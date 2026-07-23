@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto03\\WebApplicationPy02\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDF11AB-4621-411D-92F5-87EE780697FA}|WebApplicationPy02\\WebApplicationPy02.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto03\\webapplicationpy02\\webapplicationpy02\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5EDF11AB-4621-411D-92F5-87EE780697FA}|WebApplicationPy02\\WebApplicationPy02.csproj|solutionrelative:webapplicationpy02\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDF11AB-4621-411D-92F5-87EE780697FA}|WebApplicationPy02\\WebApplicationPy02.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto03\\webapplicationpy02\\webapplicationpy02\\models\\vendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDF11AB-4621-411D-92F5-87EE780697FA}|WebApplicationPy02\\WebApplicationPy02.csproj|solutionrelative:webapplicationpy02\\models\\vendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDF11AB-4621-411D-92F5-87EE780697FA}|WebApplicationPy02\\WebApplicationPy02.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto03\\webapplicationpy02\\webapplicationpy02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDF11AB-4621-411D-92F5-87EE780697FA}|WebApplicationPy02\\WebApplicationPy02.csproj|solutionrelative:webapplicationpy02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 51,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto03\\WebApplicationPy02\\WebApplicationPy02\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplicationPy02\\appsettings.json",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto03\\WebApplicationPy02\\WebApplicationPy02\\appsettings.json",
+              "RelativeToolTip": "WebApplicationPy02\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-23T00:43:11.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Vendedor.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto03\\WebApplicationPy02\\WebApplicationPy02\\Models\\Vendedor.cs",
+              "RelativeDocumentMoniker": "WebApplicationPy02\\Models\\Vendedor.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto03\\WebApplicationPy02\\WebApplicationPy02\\Models\\Vendedor.cs",
+              "RelativeToolTip": "WebApplicationPy02\\Models\\Vendedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T00:43:08.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto03\\WebApplicationPy02\\WebApplicationPy02\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplicationPy02\\Program.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto03\\WebApplicationPy02\\WebApplicationPy02\\Program.cs",
+              "RelativeToolTip": "WebApplicationPy02\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T00:40:59.388Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
