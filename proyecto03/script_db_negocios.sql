@@ -86,11 +86,12 @@ AS BEGIN
 END
 GO
 
-CREATE OR ALTER PROCEDURE usp_vendedor
+CREATE OR ALTER PROCEDURE usp_vendedores
 AS BEGIN 
  SELECT idVendedor, nombre, direccion, idPais, email FROM vendedor
 END
 GO
+
 
 CREATE OR ALTER PROCEDURE usp_merge_vendedor
 	@idvendedor INT,
@@ -101,6 +102,7 @@ CREATE OR ALTER PROCEDURE usp_merge_vendedor
 AS 
 BEGIN
 	SET NOCOUNT ON;
+
 	MERGE vendedor AS target
 	USING (SELECT @idvendedor AS id, @nombre AS nombre, @direccion AS direccion, @idpais AS idpais, @email AS email) AS src
 	ON target.idVendedor=src.id

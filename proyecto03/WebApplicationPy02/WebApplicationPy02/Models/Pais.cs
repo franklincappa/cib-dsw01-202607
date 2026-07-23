@@ -2,7 +2,7 @@
 {
     public class Pais
     {
-        public int idPais { get; set; }
+        public string idPais { get; set; }
         public string ? nombre { get; set; }
     }
 }
