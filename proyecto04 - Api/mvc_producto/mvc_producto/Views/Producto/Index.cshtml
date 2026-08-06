@@ -1,0 +1,72 @@
+﻿@model IEnumerable<mvc_producto.Models.Producto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<form asp-action="Index" asp-controller="Producto">
+    <em>Descripción del Producto</em>
+    @Html.TextBox("descripcion", "")
+    <button>Buscar</button>
+</form>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+@if (TempData["mensaje"] != null)
+{
+    <div class="alert alert-success">@TempData["mensaje"]</div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.umedida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stock)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idproducto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.descripcion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.umedida)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.precio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.stock)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.idproducto }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.idproducto })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
