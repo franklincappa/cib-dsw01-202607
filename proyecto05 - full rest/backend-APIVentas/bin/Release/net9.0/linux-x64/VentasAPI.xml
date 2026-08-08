@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VentasAPI</name>
+    </assembly>
+    <members>
+        <member name="M:VentasAPI.Controllers.v1.BoletasController.GetAll">
+            <summary>Obtiene todas las boletas con sus detalles, cliente y empleado</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.BoletasController.GetById(System.String)">
+            <summary>Obtiene una boleta por su número incluyendo todos sus detalles</summary>
+            
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.BoletasController.GetByCliente(System.String)">
+            <summary>Obtiene todas las boletas de un cliente específico</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.BoletasController.GetByEmpleado(System.String)">
+            <summary>Obtiene todas las boletas atendidas por un empleado</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.BoletasController.GetByFecha(System.DateOnly,System.DateOnly)">
+            <summary>Obtiene boletas en un rango de fechas (formato: yyyy-MM-dd)</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.BoletasController.Create(VentasAPI.Models.DTOs.Boleta.CreateBoletaDto)">
+            <summary>Registra una nueva boleta con su detalle de productos</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.BoletasController.UpdateEstado(System.String,VentasAPI.Models.DTOs.Boleta.UpdateBoletaDto)">
+            <summary>Actualiza el estado de una boleta (EMITIDO, ANULADO, PAGADO)</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.BoletasController.Delete(System.String)">
+            <summary>Elimina una boleta y sus detalles en cascada</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.CargosController.GetAll">
+            <summary>Obtiene todos los cargos registrados</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.CargosController.GetById(System.String)">
+            <summary>Obtiene un cargo por su código</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.CargosController.Create(VentasAPI.Models.DTOs.Cargo.CreateUpdateCargoDto)">
+            <summary>Crea un nuevo cargo</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.CargosController.Update(System.String,VentasAPI.Models.DTOs.Cargo.CreateUpdateCargoDto)">
+            <summary>Actualiza un cargo existente</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.CargosController.Delete(System.String)">
+            <summary>Elimina un cargo por su código</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.ClientesController.GetAll">
+            <summary>Obtiene todos los clientes con su distrito</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.ClientesController.GetById(System.String)">
+            <summary>Obtiene un cliente por su ID</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.ClientesController.Create(VentasAPI.Models.DTOs.Cliente.CreateClienteDto)">
+            <summary>Registra un nuevo cliente</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.ClientesController.Update(System.String,VentasAPI.Models.DTOs.Cliente.UpdateClienteDto)">
+            <summary>Actualiza los datos de un cliente</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.ClientesController.Delete(System.String)">
+            <summary>Elimina un cliente por su ID</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.CategoriasController.GetAll">
+            <summary>Obtiene todas las categorías de productos</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.CategoriasController.GetById(System.String)">
+            <summary>Obtiene una categoría por su código</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.CategoriasController.Create(VentasAPI.Models.DTOs.Categoria.CreateUpdateCategoriaDto)">
+            <summary>Crea una nueva categoría</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.CategoriasController.Update(System.String,VentasAPI.Models.DTOs.Categoria.CreateUpdateCategoriaDto)">
+            <summary>Actualiza una categoría existente</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.CategoriasController.Delete(System.String)">
+            <summary>Elimina una categoría por su código</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.ProductosController.GetAll">
+            <summary>Obtiene todos los productos con su categoría</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.ProductosController.GetById(System.String)">
+            <summary>Obtiene un producto por su ID</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.ProductosController.GetByCategoria(System.String)">
+            <summary>Obtiene productos filtrados por categoría</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.ProductosController.GetStockBajo">
+            <summary>Obtiene productos con stock igual o menor al mínimo</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.ProductosController.Create(VentasAPI.Models.DTOs.Producto.CreateProductoDto)">
+            <summary>Registra un nuevo producto</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.ProductosController.Update(System.String,VentasAPI.Models.DTOs.Producto.UpdateProductoDto)">
+            <summary>Actualiza los datos de un producto</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.ProductosController.Delete(System.String)">
+            <summary>Elimina un producto por su ID</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.DistritosController.GetAll">
+            <summary>Obtiene la lista completa de distritos</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.DistritosController.GetById(System.String)">
+            <summary>Obtiene un distrito por su ID</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.DistritosController.Create(VentasAPI.Models.DTOs.Distrito.CreateUpdateDistritoDto)">
+            <summary>Crea un nuevo distrito</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.DistritosController.Update(System.String,VentasAPI.Models.DTOs.Distrito.CreateUpdateDistritoDto)">
+            <summary>Actualiza un distrito existente</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.DistritosController.Delete(System.String)">
+            <summary>Elimina un distrito por su ID</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.EmpleadosController.GetAll">
+            <summary>Obtiene todos los empleados con su cargo y distrito</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.EmpleadosController.GetById(System.String)">
+            <summary>Obtiene un empleado por su código</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.EmpleadosController.GetByCargo(System.String)">
+            <summary>Obtiene empleados filtrados por cargo</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.EmpleadosController.GetByDistrito(System.String)">
+            <summary>Obtiene empleados filtrados por distrito</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.EmpleadosController.Create(VentasAPI.Models.DTOs.Empleado.CreateEmpleadoDto)">
+            <summary>Registra un nuevo empleado</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.EmpleadosController.Update(System.String,VentasAPI.Models.DTOs.Empleado.UpdateEmpleadoDto)">
+            <summary>Actualiza los datos de un empleado</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.EmpleadosController.Delete(System.String)">
+            <summary>Elimina un empleado por su código</summary>
+        </member>
+        <member name="M:VentasAPI.Controllers.v1.HealthController.GetHealth">
+            <summary>Verifica el estado de salud de la API y sus dependencias</summary>
+            <remarks>
+            Retorna el estado de la API y la conexión a base de datos.
+            Valores posibles: Healthy, Degraded, Unhealthy
+            </remarks>
+        </member>
+        <member name="T:VentasAPI.Models.DTOs.Common.ApiResponse`1">
+            <summary>
+            Respuesta genérica estándar para todos los endpoints de la API
+            </summary>
+            <typeparam name="T">Tipo de dato retornado</typeparam>
+        </member>
+        <member name="T:VentasAPI.Models.DTOs.Common.PagedApiResponse`1">
+            <summary>
+            Respuesta paginada genérica
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\repositories\\interfaces\\irepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:repositories\\interfaces\\irepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\services\\interfaces\\iservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:services\\interfaces\\iservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\controllers\\v1\\boletascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:controllers\\v1\\boletascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\services\\implementations\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:services\\implementations\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\models\\dtos\\categoria\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:models\\dtos\\categoria\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\models\\dtos\\cargo\\cargodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:models\\dtos\\cargo\\cargodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\models\\entities\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:models\\entities\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\configs\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:configs\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\configs\\dependencyinjectionconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:configs\\dependencyinjectionconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\repositories\\implementations\\repositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:repositories\\implementations\\repositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\models\\dtos\\boleta\\boletadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:models\\dtos\\boleta\\boletadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\controllers\\v1\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:controllers\\v1\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\controllers\\v1\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:controllers\\v1\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\controllers\\v1\\distritoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:controllers\\v1\\distritoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\cib-dsw01-2026\\03-project-webapiventas\\backend-apiventas\\controllers\\v1\\crudcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A92707-E540-150F-9283-78BC061C01B5}|VentasAPI.csproj|solutionrelative:controllers\\v1\\crudcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Repositories.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Repositories\\Implementations\\Repositories.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\Repositories.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Repositories\\Implementations\\Repositories.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\Repositories.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T01:10:57.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRepositories.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Repositories\\Interfaces\\IRepositories.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IRepositories.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Repositories\\Interfaces\\IRepositories.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IRepositories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T01:09:58.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Services.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Services\\Implementations\\Services.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\Services.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Services\\Implementations\\Services.cs",
+              "RelativeToolTip": "Services\\Implementations\\Services.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACoAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T01:09:33.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Mappings\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Mappings\\MappingProfile.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Mappings\\MappingProfile.cs",
+              "RelativeToolTip": "Mappings\\MappingProfile.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T01:04:26.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Entities.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Models\\Entities\\Entities.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Entities.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Models\\Entities\\Entities.cs",
+              "RelativeToolTip": "Models\\Entities\\Entities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T01:01:43.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAUwEcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T23:50:05.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CargoDto.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Models\\DTOs\\Cargo\\CargoDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Cargo\\CargoDto.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Models\\DTOs\\Cargo\\CargoDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Cargo\\CargoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T01:03:16.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:58:50.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-16T00:05:39.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoriaDto.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Models\\DTOs\\Categoria\\CategoriaDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Categoria\\CategoriaDto.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Models\\DTOs\\Categoria\\CategoriaDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Categoria\\CategoriaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T01:53:36.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IServices.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Services\\Interfaces\\IServices.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IServices.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Services\\Interfaces\\IServices.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IServices.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T01:08:29.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BoletasController.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Controllers\\v1\\BoletasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v1\\BoletasController.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Controllers\\v1\\BoletasController.cs",
+              "RelativeToolTip": "Controllers\\v1\\BoletasController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:54:19.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DependencyInjectionConfig.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Configs\\DependencyInjectionConfig.cs",
+              "RelativeDocumentMoniker": "Configs\\DependencyInjectionConfig.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Configs\\DependencyInjectionConfig.cs",
+              "RelativeToolTip": "Configs\\DependencyInjectionConfig.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T01:26:34.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SwaggerConfig.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Configs\\SwaggerConfig.cs",
+              "RelativeDocumentMoniker": "Configs\\SwaggerConfig.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Configs\\SwaggerConfig.cs",
+              "RelativeToolTip": "Configs\\SwaggerConfig.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T01:31:25.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BoletaDto.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Models\\DTOs\\Boleta\\BoletaDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\Boleta\\BoletaDto.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Models\\DTOs\\Boleta\\BoletaDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\Boleta\\BoletaDto.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T01:03:05.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HealthController.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Controllers\\v1\\HealthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v1\\HealthController.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Controllers\\v1\\HealthController.cs",
+              "RelativeToolTip": "Controllers\\v1\\HealthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:56:08.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EmpleadosController.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Controllers\\v1\\EmpleadosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v1\\EmpleadosController.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Controllers\\v1\\EmpleadosController.cs",
+              "RelativeToolTip": "Controllers\\v1\\EmpleadosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:56:05.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DistritosController.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Controllers\\v1\\DistritosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v1\\DistritosController.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Controllers\\v1\\DistritosController.cs",
+              "RelativeToolTip": "Controllers\\v1\\DistritosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:56:03.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CrudControllers.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Controllers\\v1\\CrudControllers.cs",
+              "RelativeDocumentMoniker": "Controllers\\v1\\CrudControllers.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\cib-dsw01-2026\\03-project-webApiVentas\\backend-APIVentas\\Controllers\\v1\\CrudControllers.cs",
+              "RelativeToolTip": "Controllers\\v1\\CrudControllers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:55:57.636Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
