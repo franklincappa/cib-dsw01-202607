@@ -53,8 +53,65 @@ namespace mvc_producto.Controllers
 
         }
 
+        public async Task<IActionResult> Edit(string id)
+        {
+            if (string.IsNullOrEmpty(id)) return RedirectToAction("Index");
+                    
+            Producto producto = new Producto();
+            using (var cli = new HttpClient())
+            {
+                cli.BaseAddress = new Uri("https://localhost:7060/");
+                HttpResponseMessage response = await cli.GetAsync("api/productos/"+id);
+                string apiResponse = await response.Content.ReadAsStringAsync();
+                producto = JsonConvert.DeserializeObject<Producto>(apiResponse);
+            }
+            return View(await Task.Run(()=>producto));
+
+        }
 
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(Producto producto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(producto);
+            }
+
+            string mensaje = "";
+
+            //Impactar sobre API
+            using (var cli = new HttpClient())
+            {
+                cli.BaseAddress = new Uri("https://localhost:7060/");
+                StringContent content = new StringContent(JsonConvert.SerializeObject(producto), Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = await cli.PutAsync("api/productos", content);
+                string apiResponse = await response.Content.ReadAsStringAsync();
+                mensaje = "Actualizado: "+apiResponse;
+            }
+
+            TempData["mensaje"] = mensaje;
+            return View(await Task.Run(() => producto));
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            string mensaje = "";
+            using (var cli = new HttpClient())
+            {
+                cli.BaseAddress = new Uri("https://localhost:7060/");
+                HttpResponseMessage response = await cli.DeleteAsync("api/productos/"+id);
+                string apiResponse = await response.Content.ReadAsStringAsync();
+                mensaje = "Registro Eliminado: " + apiResponse;
+            }
+
+            TempData["mensaje"] = mensaje;
+            return RedirectToAction("Index");
+        }
 
     }
 }

@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{B9F26EC8-85BF-402C-9AF7-B58574609E51}|mvc_producto\\mvc_producto.csproj|solutionrelative:mvc_producto\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B9F26EC8-85BF-402C-9AF7-B58574609E51}|mvc_producto\\mvc_producto.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto04 - api\\mvc_producto\\mvc_producto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F26EC8-85BF-402C-9AF7-B58574609E51}|mvc_producto\\mvc_producto.csproj|solutionrelative:mvc_producto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9F26EC8-85BF-402C-9AF7-B58574609E51}|mvc_producto\\mvc_producto.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto04 - api\\mvc_producto\\mvc_producto\\views\\producto\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B9F26EC8-85BF-402C-9AF7-B58574609E51}|mvc_producto\\mvc_producto.csproj|solutionrelative:mvc_producto\\views\\producto\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B9F26EC8-85BF-402C-9AF7-B58574609E51}|mvc_producto\\mvc_producto.csproj|f:\\cibertec\\2026\\ciclo 04 - dsw01\\desarrollo\\cib-dsw01-202607\\proyecto04 - api\\mvc_producto\\mvc_producto\\views\\producto\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B9F26EC8-85BF-402C-9AF7-B58574609E51}|mvc_producto\\mvc_producto.csproj|solutionrelative:mvc_producto\\views\\producto\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,19 +39,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto04 - Api\\mvc_producto\\mvc_producto\\Program.cs",
+              "RelativeDocumentMoniker": "mvc_producto\\Program.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto04 - Api\\mvc_producto\\mvc_producto\\Program.cs",
+              "RelativeToolTip": "mvc_producto\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T15:20:17.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto04 - Api\\mvc_producto\\mvc_producto\\Views\\Producto\\Edit.cshtml",
+              "RelativeDocumentMoniker": "mvc_producto\\Views\\Producto\\Edit.cshtml",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto04 - Api\\mvc_producto\\mvc_producto\\Views\\Producto\\Edit.cshtml",
+              "RelativeToolTip": "mvc_producto\\Views\\Producto\\Edit.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T15:11:37.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Create.cshtml",
               "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto04 - Api\\mvc_producto\\mvc_producto\\Views\\Producto\\Create.cshtml",
               "RelativeDocumentMoniker": "mvc_producto\\Views\\Producto\\Create.cshtml",
               "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto04 - Api\\mvc_producto\\mvc_producto\\Views\\Producto\\Create.cshtml",
               "RelativeToolTip": "mvc_producto\\Views\\Producto\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-06T01:47:13.019Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto04 - Api\\mvc_producto\\mvc_producto\\Views\\Producto\\Index.cshtml",
               "RelativeDocumentMoniker": "mvc_producto\\Views\\Producto\\Index.cshtml",
@@ -51,8 +85,7 @@
               "RelativeToolTip": "mvc_producto\\Views\\Producto\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-06T01:32:54.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-06T01:32:54.283Z"
             },
             {
               "$type": "Document",
@@ -62,7 +95,7 @@
               "RelativeDocumentMoniker": "mvc_producto\\Controllers\\ProductoController.cs",
               "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 04 - DSW01\\desarrollo\\cib-dsw01-202607\\proyecto04 - Api\\mvc_producto\\mvc_producto\\Controllers\\ProductoController.cs",
               "RelativeToolTip": "mvc_producto\\Controllers\\ProductoController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAYwGIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-06T01:06:44.091Z",
               "EditorCaption": ""
