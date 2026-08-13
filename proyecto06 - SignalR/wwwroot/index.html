@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignalR Chat Lab</title>
+
+  <!-- SignalR Client Library desde CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+
+  <style>
+    /* ═══════════════════════════════════════════
+       VARIABLES Y RESET
+    ═══════════════════════════════════════════ */
+    :root {
+      --bg-main:       #0f0f13;
+      --bg-panel:      #16161d;
+      --bg-card:       #1e1e28;
+      --bg-input:      #252532;
+      --accent:        #7c5cfc;
+      --accent-light:  #a688ff;
+      --accent-glow:   rgba(124, 92, 252, 0.35);
+      --msg-own:       #2a1f5e;
+      --msg-other:     #1e1e28;
+      --text-primary:  #e8e8f0;
+      --text-secondary:#8888aa;
+      --text-muted:    #55556a;
+      --online:        #3ddc97;
+      --danger:        #ff5e7a;
+      --border:        rgba(255,255,255,0.07);
+      --radius:        14px;
+      --radius-sm:     8px;
+      --shadow:        0 8px 32px rgba(0,0,0,0.45);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg-main);
+      color: var(--text-primary);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* fondo con grid sutil */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image:
+        linear-gradient(rgba(124,92,252,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(124,92,252,.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+    }
+
+    /* ═══════════════════════════════════════════
+       PANTALLA DE LOGIN
+    ═══════════════════════════════════════════ */
+    #login-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      animation: fadeIn .5s ease;
+    }
+
+    .login-card {
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 48px 40px;
+      width: 380px;
+      text-align: center;
+      box-shadow: var(--shadow), 0 0 80px var(--accent-glow);
+    }
+
+    .logo {
+      font-size: 48px;
+      margin-bottom: 8px;
+    }
+
+    .login-card h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+    }
+
+    .login-card p {
+      color: var(--text-secondary);
+      font-size: .9rem;
+      margin-bottom: 32px;
+    }
+
+    .login-card input {
+      width: 100%;
+      padding: 14px 18px;
+      background: var(--bg-input);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 1rem;
+      outline: none;
+      transition: border-color .2s, box-shadow .2s;
+      margin-bottom: 16px;
+    }
+
+    .login-card input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    /* ═══════════════════════════════════════════
+       BOTONES
+    ═══════════════════════════════════════════ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 28px;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-size: .95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .2s;
+      width: 100%;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      background: var(--accent-light);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px var(--accent-glow);
+    }
+
+    .btn-primary:disabled {
+      opacity: .45;
+      cursor: not-allowed;
+    }
+
+    /* ═══════════════════════════════════════════
+       LAYOUT PRINCIPAL DEL CHAT
+    ═══════════════════════════════════════════ */
+    #chat-screen {
+      display: none;
+      width: 940px;
+      height: 640px;
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow), 0 0 80px var(--accent-glow);
+      animation: fadeIn .4s ease;
+    }
+
+    .chat-layout {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      height: 100%;
+    }
+
+    /* ─── Sidebar ─── */
+    .sidebar {
+      background: var(--bg-main);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar-header {
+      padding: 20px 16px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sidebar-header h2 {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    /* indicador de estado de conexión */
+    .connection-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      background: var(--bg-card);
+      padding: 5px 10px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+    }
+
+    .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--text-muted);
+      transition: background .3s;
+    }
+
+    .dot.connected { background: var(--online); box-shadow: 0 0 6px var(--online); }
+    .dot.connecting { background: #f0c040; animation: pulse 1s infinite; }
+
+    .users-section {
+      flex: 1;
+      padding: 14px;
+      overflow-y: auto;
+    }
+
+    .users-title {
+      font-size: .72rem;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .user-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 10px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 4px;
+      transition: background .15s;
+    }
+
+    .user-item:hover { background: var(--bg-card); }
+
+    .avatar {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .8rem;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .user-name { font-size: .88rem; color: var(--text-primary); }
+    .user-me { font-size: .7rem; color: var(--text-muted); }
+
+    .sidebar-footer {
+      padding: 14px;
+      border-top: 1px solid var(--border);
+      font-size: .78rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    /* ─── Panel del chat ─── */
+    .chat-panel {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .chat-header {
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg-panel);
+    }
+
+    .chat-header-info h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .chat-header-info span {
+      font-size: .8rem;
+      color: var(--text-secondary);
+    }
+
+    /* ─── Mensajes ─── */
+    #messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      scroll-behavior: smooth;
+    }
+
+    #messages::-webkit-scrollbar { width: 4px; }
+    #messages::-webkit-scrollbar-track { background: transparent; }
+    #messages::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+    /* Mensajes del sistema */
+    .msg-system {
+      text-align: center;
+      padding: 6px 0;
+      font-size: .78rem;
+      color: var(--text-muted);
+    }
+
+    .msg-system span {
+      background: var(--bg-card);
+      padding: 4px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    /* Burbujas de mensajes */
+    .msg-group {
+      display: flex;
+      flex-direction: column;
+      max-width: 72%;
+      margin-bottom: 8px;
+    }
+
+    .msg-group.own { align-self: flex-end; align-items: flex-end; }
+    .msg-group.other { align-self: flex-start; align-items: flex-start; }
+
+    .msg-sender {
+      font-size: .72rem;
+      font-weight: 700;
+      color: var(--accent-light);
+      margin-bottom: 4px;
+      padding: 0 4px;
+    }
+
+    .msg-group.own .msg-sender { color: var(--text-secondary); }
+
+    .msg-bubble {
+      padding: 10px 16px;
+      border-radius: 18px;
+      font-size: .9rem;
+      line-height: 1.5;
+      word-break: break-word;
+      position: relative;
+    }
+
+    .msg-group.own .msg-bubble {
+      background: var(--msg-own);
+      border: 1px solid rgba(124,92,252,.3);
+      border-bottom-right-radius: 6px;
+      color: var(--text-primary);
+    }
+
+    .msg-group.other .msg-bubble {
+      background: var(--msg-other);
+      border: 1px solid var(--border);
+      border-bottom-left-radius: 6px;
+    }
+
+    .msg-time {
+      font-size: .68rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+      padding: 0 4px;
+    }
+
+    /* ─── Typing indicator ─── */
+    #typing-indicator {
+      padding: 4px 24px 6px;
+      font-size: .78rem;
+      color: var(--text-muted);
+      min-height: 24px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .typing-dots {
+      display: flex; gap: 3px;
+    }
+
+    .typing-dots span {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--text-muted);
+      animation: bounce .9s infinite;
+    }
+
+    .typing-dots span:nth-child(2) { animation-delay: .15s; }
+    .typing-dots span:nth-child(3) { animation-delay: .30s; }
+
+    /* ─── Input área ─── */
+    .input-area {
+      padding: 14px 20px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      background: var(--bg-panel);
+    }
+
+    #message-input {
+      flex: 1;
+      padding: 12px 18px;
+      background: var(--bg-input);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      color: var(--text-primary);
+      font-size: .93rem;
+      outline: none;
+      transition: border-color .2s, box-shadow .2s;
+      resize: none;
+    }
+
+    #message-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    .send-btn {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: none;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: all .2s;
+      font-size: 1.1rem;
+    }
+
+    .send-btn:hover { background: var(--accent-light); transform: scale(1.07); }
+    .send-btn:disabled { opacity: .4; cursor: not-allowed; transform: none; }
+
+    /* ═══════════════════════════════════════════
+       ANIMACIONES
+    ═══════════════════════════════════════════ */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%  { opacity: .4; }
+    }
+
+    @keyframes bounce {
+      0%, 80%, 100% { transform: translateY(0); }
+      40%  { transform: translateY(-5px); }
+    }
+
+    @keyframes msgIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .msg-group { animation: msgIn .25s ease; }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════
+     PANTALLA DE LOGIN
+════════════════════════════════════════════ -->
+<div id="login-screen">
+  <div class="login-card">
+    <div class="logo">💬</div>
+    <h1>SignalR Chat</h1>
+    <p>Laboratorio .NET 9 · WebSockets en tiempo real</p>
+
+    <input id="username-input"
+           type="text"
+           placeholder="Tu nombre de usuario..."
+           maxlength="30"
+           autocomplete="off" />
+
+    <button class="btn btn-primary" id="join-btn" onclick="joinChat()">
+      Unirme al chat →
+    </button>
+  </div>
+  <p style="color: var(--text-muted); font-size: .8rem;">
+    Presiona Enter o haz clic en el botón para conectarte
+  </p>
+</div>
+
+<!-- ════════════════════════════════════════════
+     PANTALLA DE CHAT
+════════════════════════════════════════════ -->
+<div id="chat-screen">
+  <div class="chat-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>SignalR Lab</h2>
+        <div class="connection-badge">
+          <div class="dot connecting" id="status-dot"></div>
+          <span id="status-text">Conectando...</span>
+        </div>
+      </div>
+
+      <div class="users-section">
+        <p class="users-title">En línea</p>
+        <div id="user-list"></div>
+      </div>
+
+      <div class="sidebar-footer">
+        Hub: <strong>/chatHub</strong>
+      </div>
+    </aside>
+
+    <!-- Panel principal -->
+    <div class="chat-panel">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <h3>Sala General 🌐</h3>
+          <span id="user-count">0 usuarios conectados</span>
+        </div>
+        <span style="font-size:.8rem; color:var(--text-muted)">
+          WebSocket · SignalR .NET 9
+        </span>
+      </div>
+
+      <!-- Área de mensajes -->
+      <div id="messages"></div>
+
+      <!-- Indicador de escritura -->
+      <div id="typing-indicator"></div>
+
+      <!-- Input -->
+      <div class="input-area">
+        <input id="message-input"
+               type="text"
+               placeholder="Escribe un mensaje..."
+               maxlength="500"
+               autocomplete="off"
+               disabled />
+        <button class="send-btn" id="send-btn" onclick="sendMessage()" disabled>➤</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ════════════════════════════════════════════════════════════
+//  CONFIGURACIÓN SIGNALR
+// ════════════════════════════════════════════════════════════
+
+let connection = null;
+let currentUser = '';
+let typingTimer = null;
+let isTyping = false;
+
+// Colores para avatares de usuarios
+const AVATAR_COLORS = [
+  '#7c5cfc','#e05bb5','#3ddc97','#f0b429',
+  '#5bc8f5','#ff5e7a','#4fa3e7','#f97316'
+];
+
+function getAvatarColor(name) {
+  let hash = 0;
+  for (let i = 0; i < name.length; i++) hash = name.charCodeAt(i) + ((hash << 5) - hash);
+  return AVATAR_COLORS[Math.abs(hash) % AVATAR_COLORS.length];
+}
+
+function getInitials(name) {
+  return name.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase();
+}
+
+// ════════════════════════════════════════════════════════════
+//  CONEXIÓN AL HUB
+// ════════════════════════════════════════════════════════════
+
+function buildConnection() {
+  // HubConnectionBuilder: configura cómo el cliente se conecta al servidor
+  return new signalR.HubConnectionBuilder()
+    .withUrl('/chatHub')                    // URL del hub en el servidor
+    .withAutomaticReconnect([0, 2000, 5000, 10000]) // reintentos automáticos (ms)
+    .configureLogging(signalR.LogLevel.Information)  // log en consola del browser
+    .build();
+}
+
+async function startConnection() {
+  connection = buildConnection();
+
+  // ── SUSCRIBIRSE A EVENTOS DEL SERVIDOR ──────────────────────────────────
+
+  // El servidor invoca "ReceiveMessage" cuando alguien envía un mensaje
+  connection.on('ReceiveMessage', (user, message, timestamp) => {
+    appendMessage(user, message, timestamp, user === currentUser);
+  });
+
+  // El servidor invoca "Registered" cuando confirma el registro
+  connection.on('Registered', (userName) => {
+    currentUser = userName;
+    setStatus('connected', '● Conectado');
+    document.getElementById('message-input').disabled = false;
+    document.getElementById('send-btn').disabled = false;
+    appendSystemMessage(`Bienvenido al chat, ${userName}!`);
+  });
+
+  // El servidor notifica que un usuario se unió
+  connection.on('UserJoined', (userName) => {
+    if (userName !== currentUser) {
+      appendSystemMessage(`${userName} se unió al chat 👋`);
+    }
+  });
+
+  // El servidor notifica que un usuario salió
+  connection.on('UserLeft', (userName) => {
+    appendSystemMessage(`${userName} salió del chat`);
+  });
+
+  // El servidor envía la lista actualizada de usuarios
+  connection.on('UpdateUserList', (users) => {
+    renderUserList(users);
+  });
+
+  // El servidor notifica quién está escribiendo
+  connection.on('UserTyping', (userName, isTyping) => {
+    updateTypingIndicator(userName, isTyping);
+  });
+
+  // El servidor envía un error
+  connection.on('Error', (msg) => {
+    appendSystemMessage(`⚠️ ${msg}`);
+  });
+
+  // ── EVENTOS DE RECONEXIÓN ────────────────────────────────────────────────
+
+  connection.onreconnecting(() => {
+    setStatus('connecting', '↻ Reconectando...');
+  });
+
+  connection.onreconnected(() => {
+    setStatus('connected', '● Conectado');
+    // Re-registrar usuario tras reconexión
+    connection.invoke('RegisterUser', currentUser);
+  });
+
+  connection.onclose(() => {
+    setStatus('disconnected', '○ Desconectado');
+  });
+
+  // ── INICIAR CONEXIÓN ─────────────────────────────────────────────────────
+
+  try {
+    await connection.start();
+    console.log('[SignalR] Conexión establecida. ID:', connection.connectionId);
+  } catch (err) {
+    console.error('[SignalR] Error de conexión:', err);
+    setStatus('disconnected', 'Error');
+  }
+}
+
+// ════════════════════════════════════════════════════════════
+//  ACCIONES DEL USUARIO
+// ════════════════════════════════════════════════════════════
+
+async function joinChat() {
+  const input = document.getElementById('username-input');
+  const name = input.value.trim();
+
+  if (!name) {
+    input.focus();
+    return;
+  }
+
+  // Ocultar login, mostrar chat
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('chat-screen').style.display = 'block';
+
+  // Iniciar conexión WebSocket
+  await startConnection();
+
+  // Invocar método del hub para registrarse
+  if (connection.state === signalR.HubConnectionState.Connected) {
+    await connection.invoke('RegisterUser', name);
+  }
+
+  // Configurar el input de mensajes
+  const msgInput = document.getElementById('message-input');
+  msgInput.focus();
+  msgInput.addEventListener('keydown', handleInputKeyDown);
+  msgInput.addEventListener('input', handleTyping);
+}
+
+async function sendMessage() {
+  const input = document.getElementById('message-input');
+  const message = input.value.trim();
+
+  if (!message || connection.state !== signalR.HubConnectionState.Connected) return;
+
+  // Invocar método del hub "SendMessage"
+  await connection.invoke('SendMessage', message);
+
+  input.value = '';
+  input.focus();
+
+  // Detener indicador de typing
+  if (isTyping) {
+    isTyping = false;
+    connection.invoke('UserTyping', false);
+  }
+}
+
+function handleInputKeyDown(e) {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    sendMessage();
+  }
+}
+
+function handleTyping() {
+  if (!isTyping) {
+    isTyping = true;
+    connection.invoke('UserTyping', true);
+  }
+  clearTimeout(typingTimer);
+  typingTimer = setTimeout(() => {
+    isTyping = false;
+    connection.invoke('UserTyping', false);
+  }, 2000);
+}
+
+// ════════════════════════════════════════════════════════════
+//  RENDERIZADO UI
+// ════════════════════════════════════════════════════════════
+
+function appendMessage(user, message, timestamp, isOwn) {
+  const container = document.getElementById('messages');
+
+  const group = document.createElement('div');
+  group.className = `msg-group ${isOwn ? 'own' : 'other'}`;
+
+  group.innerHTML = `
+    ${!isOwn ? `<div class="msg-sender">${escapeHtml(user)}</div>` : ''}
+    <div class="msg-bubble">${escapeHtml(message)}</div>
+    <div class="msg-time">${timestamp}${isOwn ? ' · Tú' : ''}</div>
+  `;
+
+  container.appendChild(group);
+  container.scrollTop = container.scrollHeight;
+}
+
+function appendSystemMessage(text) {
+  const container = document.getElementById('messages');
+  const el = document.createElement('div');
+  el.className = 'msg-system';
+  el.innerHTML = `<span>${escapeHtml(text)}</span>`;
+  container.appendChild(el);
+  container.scrollTop = container.scrollHeight;
+}
+
+function renderUserList(users) {
+  const list = document.getElementById('user-list');
+  const count = document.getElementById('user-count');
+  count.textContent = `${users.length} usuario${users.length !== 1 ? 's' : ''} conectado${users.length !== 1 ? 's' : ''}`;
+
+  list.innerHTML = users.map(name => `
+    <div class="user-item">
+      <div class="avatar" style="background:${getAvatarColor(name)}">${getInitials(name)}</div>
+      <div>
+        <div class="user-name">${escapeHtml(name)}</div>
+        ${name === currentUser ? '<div class="user-me">Tú</div>' : ''}
+      </div>
+    </div>
+  `).join('');
+}
+
+let typingUsers = {};
+function updateTypingIndicator(userName, isTyping) {
+  if (isTyping) {
+    typingUsers[userName] = true;
+  } else {
+    delete typingUsers[userName];
+  }
+
+  const names = Object.keys(typingUsers);
+  const el = document.getElementById('typing-indicator');
+
+  if (names.length === 0) {
+    el.innerHTML = '';
+  } else {
+    const label = names.length === 1
+      ? `${names[0]} está escribiendo`
+      : `${names.join(', ')} están escribiendo`;
+    el.innerHTML = `
+      <div class="typing-dots"><span></span><span></span><span></span></div>
+      <span>${label}...</span>
+    `;
+  }
+}
+
+function setStatus(state, text) {
+  const dot = document.getElementById('status-dot');
+  const statusText = document.getElementById('status-text');
+  dot.className = `dot ${state}`;
+  statusText.textContent = text;
+}
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+// Inicializar evento Enter en login
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('username-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') joinChat();
+  });
+});
+</script>
+</body>
+</html>

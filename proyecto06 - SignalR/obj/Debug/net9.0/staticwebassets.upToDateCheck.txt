@@ -1,0 +1,2 @@
+wwwroot\index.html
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\wwwroot\index.html

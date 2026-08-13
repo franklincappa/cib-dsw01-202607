@@ -1,0 +1,58 @@
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\bin\Debug\net9.0\appsettings.json
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\bin\Debug\net9.0\SignalRChat.staticwebassets.runtime.json
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\bin\Debug\net9.0\SignalRChat.staticwebassets.endpoints.json
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\bin\Debug\net9.0\SignalRChat.exe
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\bin\Debug\net9.0\SignalRChat.deps.json
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\bin\Debug\net9.0\SignalRChat.runtimeconfig.json
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\bin\Debug\net9.0\SignalRChat.dll
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\bin\Debug\net9.0\SignalRChat.pdb
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.AssemblyInfoInputs.cache
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.AssemblyInfo.cs
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.csproj.CoreCompileInputs.cache
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\scopedcss\bundle\SignalRChat.styles.css
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\compressed\zl06zf3egz-rxv97fny1w.gz
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.dll
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\refint\SignalRChat.dll
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.pdb
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.genruntimeconfig.cache
+C:\Users\Franklin Cappa\Downloads\Proyecto SignalR\obj\Debug\net9.0\ref\SignalRChat.dll
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\bin\Debug\net9.0\appsettings.json
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\bin\Debug\net9.0\SignalRChat.staticwebassets.runtime.json
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\bin\Debug\net9.0\SignalRChat.staticwebassets.endpoints.json
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\bin\Debug\net9.0\SignalRChat.exe
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\bin\Debug\net9.0\SignalRChat.deps.json
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\bin\Debug\net9.0\SignalRChat.runtimeconfig.json
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\bin\Debug\net9.0\SignalRChat.dll
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\bin\Debug\net9.0\SignalRChat.pdb
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\rpswa.dswa.cache.json
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.GeneratedMSBuildEditorConfig.editorconfig
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.AssemblyInfoInputs.cache
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.AssemblyInfo.cs
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.csproj.CoreCompileInputs.cache
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.MvcApplicationPartsAssemblyInfo.cache
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\rjimswa.dswa.cache.json
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\scopedcss\bundle\SignalRChat.styles.css
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\compressed\zl06zf3egz-rxv97fny1w.gz
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\staticwebassets.build.json
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\staticwebassets.build.json.cache
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\staticwebassets.development.json
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.dll
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\refint\SignalRChat.dll
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.pdb
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\SignalRChat.genruntimeconfig.cache
+F:\CIBERTEC\2026\CICLO 02\02 - 4695 DESARROLLO DE SERVICIOS WEB I\Desarrollo\practicaSiganl\Proyecto SignalR\obj\Debug\net9.0\ref\SignalRChat.dll

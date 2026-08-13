@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\practicaSiganl\\Proyecto SignalR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{05599CAC-3315-F30F-A886-7B324D0F96D9}|SignalRChat.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\practicasiganl\\proyecto signalr\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05599CAC-3315-F30F-A886-7B324D0F96D9}|SignalRChat.csproj|solutionrelative:hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05599CAC-3315-F30F-A886-7B324D0F96D9}|SignalRChat.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\practicasiganl\\proyecto signalr\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05599CAC-3315-F30F-A886-7B324D0F96D9}|SignalRChat.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05599CAC-3315-F30F-A886-7B324D0F96D9}|SignalRChat.csproj|f:\\cibertec\\2026\\ciclo 02\\02 - 4695 desarrollo de servicios web i\\desarrollo\\practicasiganl\\proyecto signalr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05599CAC-3315-F30F-A886-7B324D0F96D9}|SignalRChat.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\practicaSiganl\\Proyecto SignalR\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Hubs\\ChatHub.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\practicaSiganl\\Proyecto SignalR\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "Hubs\\ChatHub.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T23:03:23.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\practicaSiganl\\Proyecto SignalR\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\practicaSiganl\\Proyecto SignalR\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAADkCAAAAAAAAAADwv0UCAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-04-25T23:03:15.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\practicaSiganl\\Proyecto SignalR\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\CIBERTEC\\2026\\CICLO 02\\02 - 4695 DESARROLLO DE SERVICIOS WEB I\\Desarrollo\\practicaSiganl\\Proyecto SignalR\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T23:03:02.44Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
